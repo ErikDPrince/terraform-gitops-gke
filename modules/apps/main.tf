@@ -15,3 +15,4 @@ resource "kubernetes_manifest" "postgres_app" {
   count    = var.deploy_apps ? 1 : 0
   manifest = local.postgres_manifest
 }
+

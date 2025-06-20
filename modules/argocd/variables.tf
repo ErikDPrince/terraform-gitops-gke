@@ -1,6 +1,6 @@
 variable "deploy_argocd" {
   type    = bool
-  default = false
+  default = true
 }
 
 variable "gke_endpoint" {
