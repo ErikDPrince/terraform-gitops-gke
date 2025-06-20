@@ -1,0 +1,16 @@
+# Terraform build directory (contains large binaries)
+.terraform/
+
+# Terraform state files (optional but recommended to ignore if using local state)
+*.tfstate
+*.tfstate.backup
+
+# Variable files (if storing sensitive or local-specific variables)
+terraform.tfvars
+
+# Other recommended ignores
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
