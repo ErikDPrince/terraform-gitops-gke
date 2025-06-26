@@ -7,7 +7,7 @@ module "gke" {
 
 module "argocd" {
   source        = "./modules/argocd"
-  deploy_argocd = var.deploy_argocd
+  # deploy_argocd = var.deploy_argocd
   gke_endpoint  = module.gke.endpoint
 }
 
