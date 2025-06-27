@@ -1,5 +1,5 @@
 resource "helm_release" "argocd" {
-  # count              = var.deploy_argocd ? 1 : 0
+  count              = var.deploy_argocd ? 1 : 0
   name               = "argocd"
   namespace          = "argocd"
   create_namespace   = true
@@ -11,7 +11,7 @@ resource "helm_release" "argocd" {
 }
 
 resource "null_resource" "verify_argocd" {
-  # count = var.deploy_argocd ? 1 : 0
+   count = var.deploy_argocd ? 1 : 0
 
   provisioner "local-exec" {
     command = <<EOT

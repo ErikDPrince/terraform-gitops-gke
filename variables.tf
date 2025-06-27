@@ -7,6 +7,10 @@ variable "region" {
 variable "gke_cluster_name" {
   default = "gitops-cluster"
 }
+variable "domain" {
+  default = "minigameonline.net"
+}
+
 # set flag for deployment
 variable "deploy_apps" {
   description = "Toggle to deploy apps"
