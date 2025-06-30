@@ -9,6 +9,7 @@ module "argocd" {
   source        = "./modules/argocd"
   deploy_argocd = var.deploy_argocd
   gke_endpoint  = module.gke.endpoint
+  argocd_auth_token = var.argocd_auth_token
 }
 
 module "apps" {

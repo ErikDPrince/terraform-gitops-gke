@@ -24,3 +24,11 @@ variable "deploy_argocd" {
   type        = bool
   default     = false
 }
+
+variable "argocd_auth_token" {
+  description = "Authentication token for ArgoCD Image Updater"
+  type        = string
+  sensitive   = true
+  default     = ""
+}
+
